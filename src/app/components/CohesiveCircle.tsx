@@ -1,9 +1,6 @@
 "use client";
 import { useState, useRef } from "react";
 import Image from "next/image";
-import RedCircle from "../assets/RedCircle.svg"; // Adjust the path accordingly
-import BlueCircle from "../assets/BlueCircle.svg";
-import SmallRedCircle from "../assets/SmallRedCircle.svg";
 
 export const CohesiveCircle = () => {
   const containerRef = useRef(null);
@@ -32,7 +29,7 @@ export const CohesiveCircle = () => {
       <div className="relative h-80 w-full">
         <div className="animate-floating1 absolute top-5 left-5">
           <Image
-            src={RedCircle}
+            src="/redCircle.svg"
             alt="Red Circle"
             width={306}
             height={306}
@@ -45,7 +42,7 @@ export const CohesiveCircle = () => {
           onMouseMove={handleMouseMove}
         >
           <Image
-            src={BlueCircle}
+            src="/blueCircle.svg"
             alt="Blue Circle"
             width={479}
             height={350}
@@ -54,7 +51,7 @@ export const CohesiveCircle = () => {
         </div>
         <div className="animate-floating3 absolute top-0 right-10">
           <Image
-            src={SmallRedCircle}
+            src="/smallRedCircle.svg"
             alt="Small Red Circle"
             width={283}
             height={270}

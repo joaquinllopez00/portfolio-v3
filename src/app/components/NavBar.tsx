@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Logo from "../assets/logo.svg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export const NavBar = () => {
@@ -9,7 +8,7 @@ export const NavBar = () => {
     <nav className="flex justify-between items-center py-8 max-w-5xl mx-auto animate-fade-down animate-delay-[2000ms]">
       {/* Logo */}
       <div>
-        <Image priority src={Logo} alt="Joaquin Lopez" width={60} height={60} />
+        <Image priority src="/logo.svg" alt="Joaquin Lopez" width={60} height={60} />
       </div>
 
       {/* Mobile Navigation Links */}
@@ -22,7 +21,7 @@ export const NavBar = () => {
         >
           <FaLinkedin className="text-2xl" />
         </a>
-        <a href="https://www.github.com/joaquin-lopez" target="_blank" rel="noreferrer" className="cursor-pointer">
+        <a href="https://www.github.com/joaquin-lopez" target="_blank" rel="noreferrer" className="ml-2 cursor-pointer">
           <FaGithub className="text-2xl" />
         </a>
       </div>
@@ -41,7 +40,7 @@ export const NavBar = () => {
         >
           <FaLinkedin className="text-2xl" />
         </a>
-        <a href="https://www.github.com/joaquin-lopez" target="_blank" rel="noreferrer" className="ml-8 cursor-pointer">
+        <a href="https://www.github.com/joaquin-lopez" target="_blank" rel="noreferrer" className="ml-4 cursor-pointer">
           <FaGithub className="text-2xl" />
         </a>
       </div>

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { FaLink } from "react-icons/fa";
-import PlaceholderImage from "../assets/placeholder.png";
 export const ProjectCard = ({
   experience,
 }: {
@@ -16,7 +15,7 @@ export const ProjectCard = ({
     <div className="flex flex-col gap-2 card hover-shadow">
       {experience.img && (
         <div className="w-full h-auto hidden sm:block">
-          <Image src={PlaceholderImage} alt="Project" />
+          <Image src="/placeholder.png" alt="Project" width={1000} height={500} />
         </div>
       )}
 
