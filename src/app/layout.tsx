@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { NavBar } from "./components/NavBar";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const poppins = Poppins({ weight: ["100", "200", "300", "400", "500", "600", "700"], subsets: ["devanagari"] });
-
 export const metadata: Metadata = {
   title: "Joaquin Lopez",
   description: "",
@@ -20,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="z-10 relative">
             <NavBar />
             {children}
+            <Analytics />
           </div>
         </div>
       </body>
