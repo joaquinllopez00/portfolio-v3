@@ -101,10 +101,10 @@ const experiences = [
 export const WorkExperience = () => {
   return (
     <div className="relative py-14  animate-fade animate-delay-[2000ms]">
-      <div className="pb-12 relative">
+      <div className="pb-12 relative z-10">
         <HeaderWithLeftDivide text="Work Experience" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 z-10">
         {experiences.map((experience) => (
           <ExperienceCard key={experience.title} experience={experience} />
         ))}

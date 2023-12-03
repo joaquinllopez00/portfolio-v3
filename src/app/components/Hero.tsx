@@ -17,7 +17,7 @@ export const Hero = () => {
             A high-energy, motivated Full Stack Engineer who specializes in creating scalable, data-intensive web
             applications. I’ve had the privelage of working on a{" "}
             <span className="font-bold">real-time auction platform</span>, an{" "}
-            <span className="font-bold"> ai-driven sales copilot</span>, and a project to deliver.
+            <span className="font-bold"> ai-driven sales copilot</span>, and a project to deliver
           </p>
         </div>
       </div>

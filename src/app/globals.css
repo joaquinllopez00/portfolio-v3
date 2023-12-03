@@ -62,7 +62,7 @@ body {
 }
 
 .hover-shadow:hover {
-  box-shadow: 0px 0px 57px #535054;
+  box-shadow: 0px 0px 57px #53505460;
 }
 
 @media screen and (max-width: 768px) {

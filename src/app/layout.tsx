@@ -14,9 +14,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} md:px-24 px-4`}>
-        <NavBar />
-        <div className="max-w-5xl mx-auto">{children}</div>
+      <body className={`${poppins.className} md:px-24 px-4 overflow-x-hidden md:overflow-visible`}>
+        <div className="max-w-5xl mx-auto relative">
+          <div className="bg-gradient-to-b from-indigo-600 via-purple-500 to-pink-600 fixed top-0 bottom-0 right-0 w-full opacity-10 z-0" />
+          <div className="z-10 relative">
+            <NavBar />
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
