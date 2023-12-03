@@ -6,7 +6,7 @@ export const ProjectCard = ({
   experience: {
     title: string;
     link?: string;
-    img?: string;
+    img?: boolean;
     description: string;
     technologies: string[];
   };
